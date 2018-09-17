@@ -33,8 +33,10 @@
     </header>
     <main class="content">
       <event-header :event="event"></event-header>
-      <booking-form></booking-form> 
-      <event-details :event="event"></event-details> 
+      <div>
+        <booking-form></booking-form> 
+        <event-details :event="event"></event-details> 
+      </div>
       <main-map :geo="event.location.address.geoloc"></main-map> 
     </main>
     <footer class="footer"></footer>
